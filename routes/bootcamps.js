@@ -8,11 +8,6 @@ const {
     deleteBootcamp
 } = require('../controllers/bootcamps')
 
-router.get('/', (req, res) => {
-    return res.json({
-        'message': 'Welcome to the bootcamper API root route'
-    })
-})
 
 router.route('/')
 .get(getBootcamps)
